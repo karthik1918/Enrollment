@@ -1,0 +1,25 @@
+<div class="col-md-6">
+    <h2> Enrollment Details</h2>
+    
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users">
+        <td class="hidden">{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.dobDate}}</td>
+        <td [ngClass]="user.status==true?'active':'inactive'">{{user.status==true?'Active':'In-Active'}}</td>
+        <td>
+          <button class="btn btn-info" (click)="editUser(user)" style="margin-left: 20px;"> Edit</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>

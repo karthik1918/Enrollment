@@ -1,0 +1,25 @@
+<div class="col-md-6">
+    <h2 class="text-center">Edit Enrollment</h2>
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+       
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input formControlName="name" placeholder="Enter Name" name="name" class="form-control" id="name">
+        <div class="danger" *ngIf="editForm.controls.name.errors?.required">
+            Name is required.
+          </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="dobDate">Date of Birth:</label>
+        <label>{{editForm.controls.dobDate.value}}</label>
+      </div>
+      <div class="form-group">
+        <label for="status">Status:</label>
+        <input type="checkbox" formControlName="status" id="status" >
+      </div>
+      
+  
+      <button class="btn btn-success">Update</button>
+    </form>
+  </div>
