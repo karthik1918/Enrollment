@@ -4,12 +4,12 @@ import{Enroll} from './../interfaces/enroll'
   providedIn: 'root'
 })
 export class EnrollService {
-  enrollUsers:Array<Enroll> = [{id: 1, name: 'Dhiraj', status:true,dobDate:'22-03-1981' },
-  {id: 2, name: 'Naresh', status:true,dobDate:'12-06-1988' },
-  {id: 3, name: 'Kumar', status:false,dobDate:'02-05-1991' },
-  {id: 4, name: 'Karthik', status:true,dobDate:'09-03-1981' },
-  {id: 5, name: 'Rajesh', status:true,dobDate:'23-08-1985' },
-  {id: 6, name: 'Prakash', status:true,dobDate:'12-09-1983' }
+  enrollUsers:Array<Enroll> = [{id: 1, name: 'Dhiraj', status:true,dobDate:'02/23/1981' },
+  {id: 2, name: 'Martin', status:true,dobDate:'06/16/1988' },
+  {id: 3, name: 'Kevin', status:false,dobDate:'02/15/1991' },
+  {id: 4, name: 'Robert', status:true,dobDate:'09/23/1981' },
+  {id: 5, name: 'Rajesh', status:true,dobDate:'03/18/1985' },
+  {id: 6, name: 'Prakash', status:true,dobDate:'12/09/1983' }
 ];
   constructor() {
 
